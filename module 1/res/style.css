@@ -1,0 +1,363 @@
+/* Задаем шрифты элементам */
+@font-face {
+    font-family: Lobster;
+    src: url(LOBSTER.TTF);
+   }
+* {
+	margin: 0;
+	padding:0;
+    font-family: Lobster; /* Имя шрифта */
+}
+
+
+
+
+
+
+
+/* Общие элементы */
+body {
+	max-width: 1000px;
+	margin: auto;
+	color: RGB(67,40,31);
+}
+a, a:hover, a:active, a:visited {
+	text-decoration: none;
+	color: RGB(89,54,41);
+}
+
+
+
+
+
+/* шапка */
+#header {
+	padding: 20px;
+	width: 100%;
+	background: linear-gradient(to bottom, RGBA(135,125,3,0.75), RGBA(253,245,151,0.5));
+	background: -moz-linear-gradient(to bottom, RGBA(135,125,3,0.75), RGBA(253,245,151,0.5));
+	background: -webkit-linear-gradient(to bottom, RGBA(135,125,3,0.75), RGBA(253,245,151,0.5));
+	display: inline-block;
+}
+#logotype {
+	float: left;
+}
+#logotype img {
+	height: 75px;
+}
+#modes {
+	margin: 26px 26px 0 0;
+	float:right;
+}
+
+
+
+
+/* Контент */
+#main {
+	width: 100%;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+
+
+
+/* Левое меню */
+#left {
+	width: 250px;
+	margin-right: 40px;
+}
+
+#left div {
+	border: 2px solid black;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 5px;
+	font-size: 20px;
+	background: RGBA(251,236,51, 0.3);
+}
+#left div:hover {
+	background: RGBA(218,202,5,0.6);
+}
+#left div:last-child {
+	margin-bottom: 10px;
+}
+
+
+
+
+
+/* Размерности самого каталога */
+#catalog {
+	min-width: 250px;
+	max-width: 690px;
+}
+
+
+
+
+
+/* Стиль товаров каталога меню */
+#item {
+	text-align: center;
+	height: 250px;
+	width: 200px;
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 50px;
+	border: 2px solid RGBA(152,141,3,0.9);
+	background: RGBA(218,202,5,0.15);
+	padding-top:5px;
+}
+#item img {
+	width: 95%;
+}
+#item p {
+	position: absolute;
+	font-weight: bold;
+	padding: 10px;
+	margin:5px;
+	background: RGBA(255,255,255,0.7);
+}
+
+
+
+
+
+
+/* стиль элементов для режима администирования */
+form {
+	margin-bottom: 10px;
+	display: inline-block;
+}
+form #item {
+	text-align: left;
+	height: auto;
+	margin-bottom: 5px;
+}
+form #item * {
+	margin-left: 10px;
+}
+#item input, #item select {
+	margin-bottom: 10px;
+	width: 160px;
+}
+#item textarea {
+	height:50px;
+	min-height:50px;
+	max-height: 150px;
+	width: 170px;
+	min-width: 170px;
+	max-width: 170px;
+}
+#item #submit {
+	margin-left: 50%;
+	width: 70px;
+	margin-right: 15px;
+	border-radius: 7px;
+}
+#item #delete {
+	float: right;
+	margin-right: 0;
+	margin-left: 160px;
+	position: absolute;
+	padding: 5px;
+}
+#item #delete img {
+	width: 20px;
+}
+
+
+
+
+
+
+/* Просмотр одного товара */
+#foto {
+	display: inline-block;
+	text-align: center;
+	margin: 10px;
+}
+#foto img {
+	width: 200px;
+}
+#description {
+	max-width: 480px;
+	display:inline;
+	text-indent: 1.5em;
+}
+#description p {
+	padding-bottom: 3px;
+}
+
+
+
+
+
+
+/* Футер */
+#footer {
+	width: 100%;
+	max-width: 1000px;
+	padding: 20px;
+	bottom: 0px;
+	background: linear-gradient(to bottom, RGBA(253,245,151,0.5), RGBA(135,125,3,0.75));
+	background: -moz-linear-gradient(to bottom, RGBA(253,245,151,0.5), RGBA(135,125,3,0.75));
+	background: -webkit-linear-gradient(to bottom, RGBA(253,245,151,0.5), RGBA(135,125,3,0.75));
+	
+}
+
+
+
+
+
+
+
+
+
+
+/* Адаптивность ПК/телефон*/
+/* Лоя совсем маленьких экранов,
+ * все в одну колонку
+ * уменьшаем шапку, чтобы не съезжала как попало
+ * товары, так как идут в колонку, масштабируются в зависимости от разрешения
+ */
+@media (max-width: 470px) {
+	#main {
+		margin-left: 0;
+		padding-left: 5px;
+	}
+	#logotype img {
+		height: 50px;
+	}
+	#modes {
+		margin-top: 5px;
+		width: 40%;
+	}
+	#left {
+		width: 95%;
+		margin: auto;
+	}
+	#left div {
+		width: 95%;
+		padding-right: 0;
+	}
+	#catalog {
+		text-align: center;
+	}
+	#item {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0;
+		padding-top: 5px;
+		height: auto;
+		width: 80%;
+	}
+	#foto img {
+		width: 250px;	
+	}
+	form {
+		width: 80%;
+	}
+	form #item {
+		width: auto;
+	}
+	#item input, #item select {
+		width: 75%;
+	}
+	#item textarea {
+		max-width: 75%;
+	}
+	#item #delete {
+		margin-left: 65%;
+	}
+	#description {
+		margin-right: 15px;
+	}
+}
+
+
+/* Что-то ближе к планшетам, хотя у меня в телефоне то разрешение 1920x1080 :/ */
+@media (min-width: 471px) and (max-width: 780px) {
+	#logotype img {
+		height: 65px;
+	}
+	#left {
+		width: 95%;
+		margin-right: auto;
+	}
+	#foto {
+		float:left;
+	}
+	#header, #footer, #background {
+		padding-left: 5px;
+		padding-right: 0;
+	}
+}
+
+/* Багфикс: меню было слишком длинное при некоторых разрешениях */
+@media (min-width: 471px) and (max-width: 630px) {
+	#left div {
+		width: 95%;
+	}
+}
+@media (min-width: 630px) and (max-width: 780px) {
+	#left div {
+		width: 97%;
+	}
+}
+
+
+/* Нормальное разрешение экрана ПК
+ * ну во всяком случае я давно не видел монтиров с разрешением меньше, чем 1024x768
+ */
+@media (min-width: 780px) {
+	#left {
+		float:left;
+	}
+	#catalog {
+		margin-left: 290px;
+		position: absolute;
+		margin-bottom: 75px;
+	}
+	#foto {
+		float:left;
+	}
+	#footer {
+		position: fixed;
+	}
+}
+
+
+
+
+
+/* Фон для остального
+ * Имеет два вида:
+ * 1: когда у нас ширина окна браузера не меньше ширины экрана, тогда мы просто заливаем фон
+ * 2: если у нас ширина окна браузера больше ширины экрана, тогда мы заливаем фоном фиксированным див,
+ * который будет точно такой же по ширине и положению, как и сама страница, он и будет играть нам роль фона
+ */
+@media (max-width: 1040px) {
+	body {
+		background:RGBA(253,245,151,0.2);
+	}
+	#background {
+		display: none;
+	}
+}
+@media (min-width: 1040px) {
+	#background {
+		position: fixed;
+		top:0;
+		max-width: 1000px;
+		padding: 20px;
+		width: 100%;
+		height: 100%;
+		background:RGBA(253,245,151,0.2);
+		z-index: -1;
+		display: block;
+	}
+}

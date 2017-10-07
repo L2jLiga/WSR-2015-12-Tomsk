@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Сырный Сомелье</title>
+	<link rel="stylesheet" type="text/css" href="res/style.css" />
+	<link rel="stylesheet" type="text/css" href="res/main.css" />
+</head>
+<body>
+<div id="background"></div>
+<!-- Логотип -->
+<header id="header">
+	<div id="logotype"><a href="index.html"><img src="res/logotip.png" alt="Сырный сомелье" /></a></div>
+	<div id="modes"><a href="index.html">Перейти в режим пользователя</a></div>
+</header>
+
+<!-- Середина -->
+<div id="main">
+	<!-- Левое меню -->
+	<div id="left">
+		<nav>
+			<a href="index.html"><div>Твердые сыры</div></a>
+			<a href="index.html"><div>Полутвердые сыры</div></a>
+			<a href="index.html"><div>Мягкие сыры</div></a>
+		</nav>
+	</div>
+
+
+	<!-- Каталог -->
+	<div id="catalog">
+		<form>
+		<div id="item">
+			Название товара<br/>
+			<input type="text" required placeholder="Введите название товара" /><br/>
+			Стоимость<br/>
+			<input type="text" required placeholder="Введите стоимость товара в рублях" />
+		</div>
+		<div id="item">
+			Категория<br/>
+			<select required>
+				<option disabled selected >Выберите категорию</option>
+				<option>Твердые сыры</option>
+				<option>Полутвердые сыры</option>
+				<option>Мягкие сыры</option>
+			</select><br/>
+			Загрузить файл<br/>
+			<input type="file" required accept="image/*" />
+		</div>
+		<div id="item">
+			Описание<br/>
+			<textarea rows="3" required></textarea><br/>
+			<input type="submit" id="submit" onclick="return false()" value="Добавить"/>
+		</div>
+		</form>
+		<div id="item">
+			<p id="delete"><a href=""><img src="res/delete.png" alt="Удалить товар" /></a></p>
+			<p>19 320 руб</p>
+			<img src="res/tovar/Сыр Жура Монтань Margot Fromages.jpg" alt="Сыр Жура Монтань Margot Fromages"/>
+			<a href="info.html" alt="Перейти к описанию сыра">Сыр Жура Монтань Margot Fromages</a>
+		</div>
+		<div id="item">
+			<p id="delete"><a href=""><img src="res/delete.png" alt="Удалить товар" /></a></p>
+			<p>13 700 руб</p>
+			<img src="res/tovar/Сыр Бернер Margot Fromages.jpg" alt="Сыр Бернер Margot Fromages"/>
+			<a href="info.html" alt="Перейти к описанию сыра">Сыр Бернер Margot Fromages</a>
+		</div>
+		<div id="item">
+			<p id="delete"><a href=""><img src="res/delete.png" alt="Удалить товар" /></a></p>
+			<p>2 250 руб</p>
+			<img src="res/tovar/Сыр из молока Буйволиц Качотта.jpg" alt="Сыр из молока Буйволиц Качотта"/>
+			<a href="info.html" alt="Перейти к описанию сыра">Сыр из молока Буйволиц Качотта</a>
+		</div>
+		<div id="item">
+			<p id="delete"><a href=""><img src="res/delete.png" alt="Удалить товар" /></a></p>
+			<p>22 350 руб</p>
+			<img src="res/tovar/Сыр Марешаль Emmi.jpg" alt="Сыр Марешаль Emmi"/>
+			<a href="info.html" alt="Перейти к описанию сыра">Сыр Марешаль Emmi</a>
+		</div>
+		<div id="item">
+			<p id="delete"><a href=""><img src="res/delete.png" alt="Удалить товар" /></a></p>
+			<p>2 050 руб</p>
+			<img src="res/tovar/Сыр овечий Пасторино Сардо CAO.jpg" alt="Сыр овечий Пасторино Сардо CAO"/>
+			<a href="info.html" alt="Перейти к описанию сыра">Сыр овечий Пасторино Сардо САО</a>
+		</div>
+	</div>
+</div>
+
+<!-- Футер -->
+<div id="footer">
+	<footer>
+		&copy; 2015 Сырный магазин
+	</footer>
+</div>
+
+</body>
+</html>

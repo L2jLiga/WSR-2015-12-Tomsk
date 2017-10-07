@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="res/banner.css" />
+	<title>Баннер</title>
+	<script src="res/jquery-1.11.3.js"></script>
+	<script src="res/banner.js"></script>
+</head>
+<body>
+	<div id='banner'>
+		<div id="scene1">
+			<img id="logotype" src="res\logotip.png" \><br/>
+			<a href="index.html" target="_blank"><div id="toshop" style="display:none;width: 215px;margin-bottom:5px">Вы поймали мышь! Не хотите купить спасенный сыр? или..</div></a>
+			Как насчет собрать 15 кусков сыра?..
+			<a href="#"><div id="toscene2">СОБРАТЬ!</div></a>
+			<mousealert>А-А-А.. Мышь! Поймай её!</mousealert>
+			<img src="res/mouse.png" id="mice"/>
+		</div>
+
+		<div id="scene2">
+			<img id="logotype" src="res\logotip.png" \><div id="header">Собрано: <fb>0</fb></div>
+			<fbb id="footer">Собери 15 кусков!</fbb>
+			<div id="backgr" style="width:100%;height:100%; position:absolute; z-index:1000;display:none;"></div>
+		</div>
+
+		<div id="scene3">
+			<img id="logotype" src="res\logotip.png" \><br/>
+			Поздравляю! Вы собрали 15 кусков сыра! Не желаете отведать нашего сыра?
+			<a href="index.html" target="_blank"><div id="toshop">Перейти к каталогу!</div></a><br>
+			<a href="#" id="again">Сыграем еще?</a>
+		</div>
+	</div>
+</body>

@@ -1,0 +1,80 @@
+
+/* общие параметры баннера */
+#banner {
+	width: 330px;
+	height: 274px;
+	display: block;
+	text-align: center;
+	background:RGB(253,245,151);
+	font-weight: bold;
+	border: 3px dotted RGBA(218,202,5,0.6);
+	color: RGB(67,40,31);
+}
+#banner div {
+	padding: 5px;
+}
+a, a:hover, a:active, a:visited {
+	text-decoration: none;
+	color: RGB(89,54,41);
+}
+
+/* Сцена первая */
+#logotype {
+	width: 200px;
+	padding-bottom: 5px;
+}
+#toscene2, #toshop {
+	width: 150px;
+	padding: 15px;
+	background:RGBA(222,200,5, 0.2);
+	margin: auto;
+	margin-top: 5px;
+	font-size: 18px;
+	border: 5px solid RGBA(218,202,5,0.9);
+	border-radius: 200px;
+}
+#toscene2:hover, #toshop:hover {
+	background:RGBA(222,200,5, 0.6);
+}
+#mice {
+	position: absolute;
+	left: 280px;
+	top:240px;
+}
+
+/* Сцена 2 */
+#scene2 {
+	width: 330px;
+	height: 274px;
+	display: none;
+	text-align: center;
+	cursor: -webkit-grab;
+}
+#scene2 div {
+	position: absolute;
+	top: 15px;
+	margin-left: 215px;
+}
+.cheese {
+	position: absolute;
+	display: none;
+}
+.cheese:active {
+	cursor: -webkit-grabbing;
+}
+#scene2 img {
+	border-radius: 200px;
+}
+#footer {
+	position: absolute;
+	margin-top: 240px;
+	margin-left: 200px;
+	left: 0;
+}
+
+
+
+/* Сцена 3 */
+#scene3 {
+	display: none;
+}

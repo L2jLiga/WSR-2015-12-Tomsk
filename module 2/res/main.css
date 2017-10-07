@@ -1,0 +1,17 @@
+
+/* Набор костылей для каталога товаров
+ * Предполагает фиксированный подвал в каталоге и корректирует расстояния до него
+*/
+@media (min-width: 471px) and (max-width: 780px) {
+	#footer {
+		position: fixed;
+	}
+}
+@media (min-width: 780px) {
+	#footer {
+		position: fixed;
+	}
+	#catalog {
+		margin-bottom: 30px;
+	}
+}
